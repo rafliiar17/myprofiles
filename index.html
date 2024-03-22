@@ -5,10 +5,15 @@ const typebotInitScript = document.createElement("script");
 typebotInitScript.type = "module";
 typebotInitScript.innerHTML = `import Typebot from 'https://cdn.jsdelivr.net/npm/@typebot.io/js@0.2/dist/web.js'
 
-Typebot.initPopup({ typebot: "rafzme", autoShowDelay: 3000 });
+Typebot.initBubble({
+  typebot: "rafzme",
+  previewMessage: { message: "Can i help you?" },
+  theme: {
+    button: { backgroundColor: "#9B74B7" },
+    previewMessage: { backgroundColor: "#666460", textColor: "#FFFFFF" },
+  },
+});
 `;
 document.body.append(typebotInitScript);
 </script>
-<noscript><a href="https://www.livechat.com/chat-with/17229282/" rel="nofollow">Chat with us</a>, powered by <a href="https://rafz.tech" rel="noopener nofollow" target="_blank">RafzTech</a></noscript>
-<!-- End of LiveChat code -->
-	<script defer="defer" src="/static/js/main.bf15509c.js"></script><link href="/static/css/main.e555e562.css" rel="stylesheet"></head><body class="root" id="root"><script src="/bundle.js"></script></body></html>
+<link href="/static/css/main.e555e562.css" rel="stylesheet"></head><body class="root" id="root"><script src="/bundle.js"></script></body></html>
